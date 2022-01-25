@@ -1,0 +1,175 @@
+body {
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  max-width: 1260px;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "logo link1 link2 link3";
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.logo {
+  grid-area: logo;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 45px;
+}
+
+.link1 {
+  grid-area: link1;
+  line-height: 50px;
+  color: rgb(125, 125, 126);
+}
+
+.link2 {
+  grid-area: link2;
+  line-height: 50px;
+  color: rgb(125, 125, 126);
+}
+
+.link3 {
+  grid-area: link3;
+  line-height: 50px;
+  color: rgb(125, 125, 126);
+}
+
+.info {
+  margin-top: 50px;
+}
+
+.container_info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "info_img info_text";
+}
+
+.info_img {
+  grid-area: info_img;
+}
+
+.info_img > img {
+  width: 500px;
+}
+
+.info_text {
+  grid-area: info_text;
+  font-size: 20px;
+}
+
+.info_text--box {
+  margin-top: 120px;
+  margin-right: 100px;
+}
+
+.container_pricing {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "pricing1 pricing2 pricing3 pricing4";
+  margin-bottom: 100px;
+  margin-top: 100px;
+  font-size: 17px;
+}
+
+.pricing1 {
+  grid-area: pricing1;
+}
+
+.pricing2 {
+  grid-area: pricing2;
+}
+
+.pricing3 {
+  grid-area: pricing3;
+}
+
+.pricing4 {
+  grid-area: pricing4;
+}
+
+.pricing1,
+.pricing2,
+.pricing3,
+.pricing4 {
+  color: #fff;
+  background-color: rgb(53, 52, 131);
+  height: 300px;
+  margin: 20px 10px 0 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 8px 8px 17px -12px rgba(29, 30, 60, 1);
+  -moz-box-shadow: 8px 8px 17px -12px rgba(29, 30, 60, 1);
+  box-shadow: 8px 8px 17px -12px rgba(29, 30, 60, 1);
+  transition: 0.3s;
+}
+
+.pricing1:hover,
+.pricing2:hover,
+.pricing3:hover,
+.pricing4:hover {
+  color: rgb(14, 13, 66);
+  background-color: rgb(209, 214, 243);
+  height: 300px;
+  margin: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 8px 8px 17px -12px rgba(29, 30, 60, 1);
+  -moz-box-shadow: 8px 8px 17px -12px rgba(29, 30, 60, 1);
+  box-shadow: 8px 8px 17px -12px rgba(29, 30, 60, 1);
+}
+
+.pricing1:hover > .btn_buy,
+.pricing2:hover > .btn_buy,
+.pricing3:hover > .btn_buy,
+.pricing4:hover > .btn_buy {
+  background-color: rgb(53, 52, 131);
+  color: #fff;
+}
+
+.btn_buy {
+  width: 150px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgb(253, 253, 253);
+  color: rgb(112, 111, 182);
+}
+
+.option {
+  margin-top: 50px;
+}
+
+.info_main {
+  width: 21ch;
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
